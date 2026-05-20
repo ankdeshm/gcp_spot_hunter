@@ -1,0 +1,10 @@
+{
+  "g2-standard-4": {
+    "description": "1x L4 GPU per node",
+    "regions": ["us-central1", "us-east5", "us-west1", "europe-west4"]
+  },
+  "a2-highgpu-1g": {
+    "description": "1x A100 40GB per node",
+    "regions": ["us-central1", "us-east1"]
+  }
+}
