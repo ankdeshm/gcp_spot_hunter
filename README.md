@@ -14,7 +14,7 @@ Before running this tool, you must ensure you have the required **Preemptible** 
 
 1. **Clone the repository and navigate into it:**
    ```bash
-   git clone [https://github.com/YOUR_ORG/gcp-spot-hunter.git](https://github.com/YOUR_ORG/gcp-spot-hunter.git)
+   git clone https://github.com/YOUR_ORG/gcp-spot-hunter.git
    cd gcp-spot-hunter
    ```
 
