@@ -1,10 +1,178 @@
 {
-  "g2-standard-4": {
-    "description": "1x L4 GPU per node",
-    "regions": ["us-central1", "us-east5", "us-west1", "europe-west4"]
+  "a4-highgpu-8g": {
+    "description": "8x NVIDIA B200 180GB GPUs",
+    "regions": [
+      "asia-northeast1", "europe-north1", "us-east1", "europe-west4", "us-central1", 
+      "asia-southeast1", "us-south1", "us-west8", "us-east7", "us-west3", "us-west2"
+    ],
+    "zones": [
+      "asia-northeast1-b", "europe-north1-b", "us-east1-b", "europe-west4-b", "us-central1-b", 
+      "asia-southeast1-b", "us-south1-b", "us-west8-c", "us-east7-b", "us-west3-c", 
+      "us-east7-ai1b", "us-west2-c", "us-west3-b"
+    ]
+  },
+  "a3-ultragpu-8g": {
+    "description": "8x NVIDIA H200 141GB GPUs",
+    "regions": [
+      "us-south1", "europe-west4", "asia-south2", "us-east4", "us-central1", 
+      "europe-west1", "us-west1", "asia-south1", "us-east7"
+    ],
+    "zones": [
+      "us-south1-b", "europe-west4-a", "asia-south2-c", "us-east4-b", "us-central1-b", 
+      "europe-west1-b", "us-west1-c", "asia-south1-b", "us-east7-c"
+    ]
+  },
+  "a3-megagpu-8g": {
+    "description": "8x NVIDIA H100 Mega 80GB GPUs",
+    "regions": [
+      "us-east4", "us-central1", "europe-west4", "asia-southeast1", "europe-west1", 
+      "us-west4", "us-west1", "us-east5", "asia-northeast1", "australia-southeast1", "us-east7"
+    ],
+    "zones": [
+      "us-east4-b", "us-central1-b", "europe-west4-c", "us-east4-a", "us-central1-a", 
+      "asia-southeast1-b", "europe-west1-c", "us-west4-a", "us-west1-a", "us-central1-c", 
+      "asia-southeast1-c", "us-east5-a", "us-west1-b", "europe-west4-b", "asia-northeast1-b", 
+      "australia-southeast1-c", "europe-west1-b", "us-east7-b"
+    ]
+  },
+  "a3-highgpu-8g": {
+    "description": "8x NVIDIA H100 80GB GPUs",
+    "regions": ["us-east4", "us-central1", "us-east5", "us-west1", "europe-west4", "asia-southeast1", "asia-northeast3", "us-west4", "asia-east1", "europe-west1", "us-east7", "asia-south1", "northamerica-northeast2", "europe-west3"],
+    "zones": ["us-east4-a", "us-central1-a", "us-east5-a", "us-west1-a", "europe-west4-b", "asia-southeast1-c", "europe-west4-c", "us-west1-b", "asia-southeast1-b", "asia-northeast3-c", "us-central1-b", "us-east4-b", "us-central1-c", "us-west4-a", "asia-east1-c", "europe-west1-c", "us-east7-b", "asia-south1-c", "northamerica-northeast2-c", "europe-west3-c"]
+  },
+  "a3-highgpu-4g": {
+    "description": "4x NVIDIA H100 80GB GPUs",
+    "regions": ["us-east4", "us-central1", "us-east5", "us-west1", "europe-west4", "asia-southeast1", "asia-northeast3", "us-west4", "asia-east1", "europe-west1", "us-east7", "asia-south1", "northamerica-northeast2", "europe-west3"],
+    "zones": ["us-east4-a", "us-central1-a", "us-east5-a", "us-west1-a", "europe-west4-b", "asia-southeast1-c", "europe-west4-c", "us-west1-b", "asia-southeast1-b", "asia-northeast3-c", "us-central1-b", "us-east4-b", "us-central1-c", "us-west4-a", "asia-east1-c", "europe-west1-c", "us-east7-b", "asia-south1-c", "northamerica-northeast2-c", "europe-west3-c"]
+  },
+  "a3-highgpu-2g": {
+    "description": "2x NVIDIA H100 80GB GPUs",
+    "regions": ["us-east4", "us-central1", "us-east5", "us-west1", "europe-west4", "asia-southeast1", "asia-northeast3", "us-west4", "asia-east1", "europe-west1", "us-east7", "asia-south1", "northamerica-northeast2", "europe-west3"],
+    "zones": ["us-east4-a", "us-central1-a", "us-east5-a", "us-west1-a", "europe-west4-b", "asia-southeast1-c", "europe-west4-c", "us-west1-b", "asia-southeast1-b", "asia-northeast3-c", "us-central1-b", "us-east4-b", "us-central1-c", "us-west4-a", "asia-east1-c", "europe-west1-c", "us-east7-b", "asia-south1-c", "northamerica-northeast2-c", "europe-west3-c"]
+  },
+  "a3-highgpu-1g": {
+    "description": "1x NVIDIA H100 80GB GPU",
+    "regions": ["us-east4", "us-central1", "us-east5", "us-west1", "europe-west4", "asia-southeast1", "asia-northeast3", "us-west4", "asia-east1", "europe-west1", "us-east7", "asia-south1", "northamerica-northeast2", "europe-west3"],
+    "zones": ["us-east4-a", "us-central1-a", "us-east5-a", "us-west1-a", "europe-west4-b", "asia-southeast1-c", "europe-west4-c", "us-west1-b", "asia-southeast1-b", "asia-northeast3-c", "us-central1-b", "us-east4-b", "us-central1-c", "us-west4-a", "asia-east1-c", "europe-west1-c", "us-east7-b", "asia-south1-c", "northamerica-northeast2-c", "europe-west3-c"]
+  },
+  "a2-ultragpu-8g": {
+    "description": "8x NVIDIA A100 80GB GPUs",
+    "regions": ["us-central1", "europe-west4", "asia-southeast1", "us-east5", "us-east4", "us-east7"],
+    "zones": ["us-central1-a", "us-central1-c", "europe-west4-a", "asia-southeast1-c", "us-east5-b", "us-east4-c", "us-east7-a"]
+  },
+  "a2-ultragpu-4g": {
+    "description": "4x NVIDIA A100 80GB GPUs",
+    "regions": ["us-central1", "europe-west4", "asia-southeast1", "us-east5", "us-east4", "us-east7"],
+    "zones": ["us-central1-a", "us-central1-c", "europe-west4-a", "asia-southeast1-c", "us-east5-b", "us-east4-c", "us-east7-a"]
+  },
+  "a2-ultragpu-2g": {
+    "description": "2x NVIDIA A100 80GB GPUs",
+    "regions": ["us-central1", "europe-west4", "asia-southeast1", "us-east5", "us-east4", "us-east7"],
+    "zones": ["us-central1-a", "us-central1-c", "europe-west4-a", "asia-southeast1-c", "us-east5-b", "us-east4-c", "us-east7-a"]
+  },
+  "a2-ultragpu-1g": {
+    "description": "1x NVIDIA A100 80GB GPU",
+    "regions": ["us-central1", "europe-west4", "asia-southeast1", "us-east5", "us-east4", "us-east7"],
+    "zones": ["us-central1-a", "us-central1-c", "europe-west4-a", "asia-southeast1-c", "us-east5-b", "us-east4-c", "us-east7-a"]
+  },
+  "a2-megagpu-16g": {
+    "description": "16x NVIDIA A100 40GB GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "asia-northeast3", "us-east1", "us-west1", "us-west4", "asia-northeast1", "us-west3", "me-west1", "us-east7"],
+    "zones": ["us-central1-f", "us-central1-c", "us-central1-a", "asia-southeast1-c", "europe-west4-a", "us-central1-b", "europe-west4-b", "asia-northeast3-b", "us-east1-b", "asia-northeast3-a", "us-west1-b", "us-west4-b", "asia-southeast1-b", "asia-northeast1-c", "asia-northeast1-a", "us-west3-b", "me-west1-c", "me-west1-b", "us-east7-b", "us-east1-a"]
+  },
+  "a2-highgpu-8g": {
+    "description": "8x NVIDIA A100 40GB GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "asia-northeast3", "us-east1", "us-west1", "us-west4", "asia-northeast1", "us-west3", "me-west1", "us-east7"],
+    "zones": ["us-central1-f", "us-central1-c", "us-central1-a", "asia-southeast1-c", "europe-west4-a", "us-central1-b", "europe-west4-b", "asia-northeast3-b", "us-east1-b", "asia-northeast3-a", "us-west1-b", "us-west4-b", "asia-southeast1-b", "asia-northeast1-c", "asia-northeast1-a", "us-west3-b", "me-west1-c", "me-west1-b", "us-east7-b", "us-east1-a"]
+  },
+  "a2-highgpu-4g": {
+    "description": "4x NVIDIA A100 40GB GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "asia-northeast3", "us-east1", "us-west1", "us-west4", "asia-northeast1", "us-west3", "me-west1", "us-east7"],
+    "zones": ["us-central1-f", "us-central1-c", "us-central1-a", "asia-southeast1-c", "europe-west4-a", "us-central1-b", "europe-west4-b", "asia-northeast3-b", "us-east1-b", "asia-northeast3-a", "us-west1-b", "us-west4-b", "asia-southeast1-b", "asia-northeast1-c", "asia-northeast1-a", "us-west3-b", "me-west1-c", "me-west1-b", "us-east7-b", "us-east1-a"]
+  },
+  "a2-highgpu-2g": {
+    "description": "2x NVIDIA A100 40GB GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "asia-northeast3", "us-east1", "us-west1", "us-west4", "asia-northeast1", "us-west3", "me-west1", "us-east7"],
+    "zones": ["us-central1-f", "us-central1-c", "us-central1-a", "asia-southeast1-c", "europe-west4-a", "us-central1-b", "europe-west4-b", "asia-northeast3-b", "us-east1-b", "asia-northeast3-a", "us-west1-b", "us-west4-b", "asia-southeast1-b", "asia-northeast1-c", "asia-northeast1-a", "us-west3-b", "me-west1-c", "me-west1-b", "us-east7-b", "us-east1-a"]
   },
   "a2-highgpu-1g": {
-    "description": "1x A100 40GB per node",
-    "regions": ["us-central1", "us-east1"]
+    "description": "1x NVIDIA A100 40GB GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "asia-northeast3", "us-east1", "us-west1", "us-west4", "asia-northeast1", "us-west3", "me-west1", "us-east7"],
+    "zones": ["us-central1-f", "us-central1-c", "us-central1-a", "asia-southeast1-c", "europe-west4-a", "us-central1-b", "europe-west4-b", "asia-northeast3-b", "us-east1-b", "asia-northeast3-a", "us-west1-b", "us-west4-b", "asia-southeast1-b", "asia-northeast1-c", "asia-northeast1-a", "us-west3-b", "me-west1-c", "me-west1-b", "us-east7-b", "us-east1-a"]
+  },
+  "g2-standard-4": {
+    "description": "1x NVIDIA L4 GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-8": {
+    "description": "1x NVIDIA L4 GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-12": {
+    "description": "1x NVIDIA L4 GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-16": {
+    "description": "1x NVIDIA L4 GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-32": {
+    "description": "1x NVIDIA L4 GPU",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-24": {
+    "description": "2x NVIDIA L4 GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-48": {
+    "description": "4x NVIDIA L4 GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g2-standard-96": {
+    "description": "8x NVIDIA L4 GPUs",
+    "regions": ["us-central1", "asia-southeast1", "europe-west4", "us-west1", "us-east1", "asia-east1", "me-central2", "europe-west1", "asia-northeast3", "us-east4", "asia-south1", "asia-northeast1", "northamerica-northeast1", "us-west4", "us-east7", "europe-west2", "europe-west3", "northamerica-northeast2", "europe-west6"],
+    "zones": ["us-central1-a", "us-central1-b", "asia-southeast1-a", "asia-southeast1-b", "us-central1-f", "europe-west4-c", "asia-southeast1-c", "europe-west4-a", "us-west1-b", "us-east1-c", "asia-east1-a", "us-west1-a", "me-central2-c", "europe-west1-b", "us-east1-b", "us-east1-d", "asia-northeast3-a", "europe-west1-c", "us-east4-a", "europe-west4-b", "us-east4-c", "asia-south1-b", "asia-northeast1-c", "northamerica-northeast1-b", "asia-east1-c", "us-west4-a", "asia-northeast1-b", "us-west1-c", "asia-east1-b", "asia-northeast3-b", "us-east7-b", "europe-west2-b", "us-west4-b", "europe-west3-b", "europe-west3-a", "asia-south1-c", "europe-west2-a", "northamerica-northeast2-b", "me-central2-a", "asia-northeast1-a", "europe-west6-c", "europe-west6-b", "asia-south1-a", "northamerica-northeast2-a"]
+  },
+  "g4-standard-6": {
+    "description": "Fractional (1/8) NVIDIA RTX A6000 GPU",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-12": {
+    "description": "Fractional (1/4) NVIDIA RTX A6000 GPU",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-24": {
+    "description": "Fractional (1/2) NVIDIA RTX A6000 GPU",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-48": {
+    "description": "1x NVIDIA RTX A6000 GPU",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-96": {
+    "description": "2x NVIDIA RTX A6000 GPUs",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-192": {
+    "description": "4x NVIDIA RTX A6000 GPUs",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
+  },
+  "g4-standard-384": {
+    "description": "8x NVIDIA RTX A6000 GPUs",
+    "regions": ["asia-southeast1", "us-east4", "us-central1", "us-west1", "asia-south1", "us-west8", "europe-west4", "europe-west8", "us-east1", "us-east5", "europe-west1", "us-east7", "asia-east1", "europe-north1", "asia-south2", "us-south1", "europe-west2", "us-west3", "us-west4", "asia-southeast2", "europe-west10"],
+    "zones": ["asia-southeast1-a", "us-east4-b", "us-east4-c", "us-central1-d", "us-west1-c", "us-central1-b", "asia-south1-c", "us-west8-a", "europe-west4-b", "europe-west8-b", "europe-west4-ai1a", "us-east1-b", "asia-southeast1-b", "us-east5-a", "europe-west1-c", "europe-west4-a", "us-east7-b", "us-east5-b", "asia-east1-a", "europe-north1-a", "asia-southeast1-c", "us-central1-a", "asia-south2-c", "us-west1-b", "us-south1-a", "europe-north1-b", "europe-west2-b", "europe-west2-c", "us-west3-a", "us-west4-a", "us-east1-d", "asia-southeast2-b", "europe-west10-b", "asia-southeast2-c", "us-east5-c", "us-central1-f", "asia-south2-a", "us-south1-b"]
   }
 }
